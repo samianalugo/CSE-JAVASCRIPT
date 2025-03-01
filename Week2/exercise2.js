@@ -96,3 +96,17 @@ console.log(space.concat(space1,space2))
 
 //using the repeat method
 console.log(space.repeat(2))
+
+//typeof function
+let number = "num('10')";
+console.log(typeof(number===10))
+
+let number1 = 10===10
+console.log(number1)
+
+//parsefloat function
+let number2 = "parseFloat('9.8')";
+let roundedNum = Math.round(9.8)
+console.log(number2)
+
+console.log(roundedNum===10)
