@@ -102,11 +102,56 @@ let number = "num('10')";
 console.log(typeof(number===10))
 
 let number1 = 10===10
-console.log(number1)
+console.log(number1);
 
-//parsefloat function
-let number2 = "parseFloat('9.8')";
-let roundedNum = Math.round(9.8)
-console.log(number2)
+let numb = parseFloat('9.8'); 
 
-console.log(roundedNum===10)
+// Convert string to float
+console.log(numb === 10); 
+// Output: false
+
+if (numb !== 10) {
+    numb = Math.round(numb); // Round to the nearest integer
+}
+
+console.log(numb); // Output: 10
+console.log(numb === 10);
+
+//number 3 
+let word = "python";
+let word2 = "jargon";
+
+console.log(word.includes("on"))
+console.log(word2.includes("on"))
+
+if (word && word2) {
+    console.log("'on' is found in both Python and jargon.");
+} else {
+    console.log("'on' is NOT found in both.");
+}
+// number 4
+let sentence1 ="i hope this course is not full of jargon";
+console.log(sentence1.includes("jargon"))
+
+if (sentence1){
+    console.log("jargon is found in the sentence");
+}else {
+    console.log("not found");
+}
+//generating random numbers
+let randomNumber = Math.floor(Math.random() * 100); 
+console.log(randomNumber);
+
+let randomNumber2 = Math.floor(Math.random() * 50) + 50;
+console.log(randomNumber2);
+
+let randomNumber3 = Math.floor(Math.random() * 255);
+console.log(randomNumber3);
+
+//using string characters
+let wrd = "JavaScript";
+let randomIndex = Math.floor(Math.random() * wrd.length); 
+let randomChar = wrd[randomIndex];
+
+console.log(`Random Character: ${randomChar}`);
+
